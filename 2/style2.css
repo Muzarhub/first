@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: burlywood;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+img {
+  height: 170px;
+  width: 200px;
+}
+.tabs input {
+  display: none;
+}
+.label {
+  color: black;
+  font-weight: 900px;
+  font-size: 24px;
+  margin: 25px 360px;
+}
+.label label {
+  margin: 0 40px;
+}
+#all-foods:checked ~ .All-foots,
+#all-foods:checked ~ .Drinkables,
+#all-foods:checked ~ .Fast-foods,
+#all-foods:checked ~ .Dessert {
+  display: block;
+}
+#drinkables:checked ~ .All-foots,
+#drinkables:checked ~ .Fast-foods,
+#drinkables:checked ~ .Dessert {
+  display: none;
+}
+
+#desserts:checked ~ .All-foots,
+#desserts:checked ~ .Fast-foods,
+#desserts:checked ~ .Drinkables {
+  display: none;
+}
+#fast-foods:checked ~ .All-foots,
+#fast-foods:checked ~ .Drinkables,
+#fast-foods:checked ~ .Dessert {
+  display: none;
+}
